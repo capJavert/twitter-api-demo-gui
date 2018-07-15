@@ -1,0 +1,9 @@
+<ol *ngIf="breadcrumbs.length > 0" class="breadcrumb">
+  <li><a routerLink="" class="breadcrumb">{{'HOME.HOME' | translate}}</a></li>
+
+  <li *ngFor="let breadcrumb of breadcrumbs">
+    <a [routerLink]="[breadcrumb.url]">{{breadcrumb.label | translate}}</a>
+  </li>
+</ol>
+
+<div *ngIf="breadcrumbs.length == 0" class="clearfix" style="margin-bottom: 30px"></div>

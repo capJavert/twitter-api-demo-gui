@@ -1,0 +1,38 @@
+
+.breadcrumb {
+  list-style: none;
+  padding: 10px;
+  background: #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  li {
+    display: inline;
+
+    &:after {
+      color: #a9a9a9;
+      margin: 0 10px;
+      content: "/";
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+
+    a,
+    a:active,
+    a:visited {
+      font-weight: 100;
+      color: #a9a9a9;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffd740;
+    }
+  }
+}

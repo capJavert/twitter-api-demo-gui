@@ -1,0 +1,124 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body {
+  background: #fafafa;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding-bottom: 40px;
+}
+
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.table-filters > * {
+  width: 100%;
+}
+
+.mat-column-edit, .mat-column-delete {
+  flex: 0 0 35px !important;
+}
+
+.mat-column-delete {
+  color: #d50000;
+}
+
+.language-picker {
+  box-sizing: border-box;
+  padding-top: 10px;
+
+  .mat-form-field-infix {
+    padding: 0;
+    border: none;
+  }
+
+  .mat-input-container {
+    font-size: 14px;
+
+    .mat-select-value {
+      font-size: 14px;
+      color: #ffffff;
+    }
+
+    .mat-input-underline {
+      display: none;
+    }
+
+    .mat-select-arrow {
+      color: #ffffff;
+    }
+  }
+}
+
+.flag-icon.flag-icon-squared {
+  margin-top: 13px;
+  float: right;
+}
+
+button {
+  margin-bottom: 10px !important;
+}
+
+snack-bar-container,
+simple-snack-bar {
+  z-index: 9999 !important;
+}
+
+.mat-input-container.input-no-underline .mat-input-underline {
+  display: none;
+}
+
+.static-label {
+  .mat-form-field-label-wrapper {
+    position: static !important;
+  }
+}
+
+.search-field {
+  .mat-form-field-label {
+    margin-top: 2px;
+  }
+
+  @-moz-document url-prefix() {
+    .mat-form-field-label {
+      margin-top: 0;
+    }
+  }
+
+  &.mat-focused {
+    .mat-form-field-label {
+      .search-label
+    }
+  }
+
+  .mat-form-field-label:not(.mat-form-field-empty) {
+    .search-label
+  }
+}
+
+.search-label {
+  margin-top: -10px;
+  color: #ffffff;
+}
+.mat-tab-labels{
+  justify-content: center;
+}
+
+.container-fluid {
+  max-width: 1280px;
+}
+

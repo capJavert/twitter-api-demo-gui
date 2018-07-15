@@ -1,0 +1,75 @@
+{
+  "HOME": {
+    "HOME": "Home",
+    "HELLO": "hello world"
+  },
+  "LANGUAGES": {
+    "ENGLISH": "English",
+    "CROATIAN": "Croatian"
+  },
+  "MAIN": {
+    "TITLE": "Twitter GUI Demo",
+    "CLOSE": "Close",
+    "FILTERS": "Filters",
+    "PER_PAGE": "Items per page"
+  },
+  "TITLES": {
+    "CREATE": "Create",
+    "VIEW": "View",
+    "EDIT": "Edit",
+    "DELETE": "Delete"
+  },
+  "COMMONS": {
+    "ID": "ID",
+    "NAME": "Name",
+    "DESCRIPTION": "Description",
+    "SEARCH": "Search",
+    "RESET": "Reset",
+    "DELETE": "Delete",
+    "EDIT": "Edit",
+    "SAVE": "Save",
+    "ADD": "Create new",
+    "NEW_FEMALE": "New",
+    "NEW_NEUTER": "New",
+    "NEW_MALE": "New",
+    "SAVE_NEW_MESSAGE_FEMALE": "{{modelName}} is created successfully",
+    "SAVE_NEW_MESSAGE_NEUTER": "{{modelName}} is created successfully",
+    "SAVE_NEW_MESSAGE_MALE": "{{modelName}} is created successfully",
+    "SAVE_UPDATE_MESSAGE_FEMALE": "{{modelName}} is saved successfully",
+    "SAVE_UPDATE_MESSAGE_NEUTER": "{{modelName}} is saved successfully",
+    "SAVE_UPDATE_MESSAGE_MALE": "{{modelName}} is saved successfully",
+    "DELETE_MESSAGE_FEMALE": "{{modelName}} is deleted successfully",
+    "DELETE_MESSAGE_NEUTER": "{{modelName}} is deleted successfully",
+    "DELETE_MESSAGE_MALE": "{{modelName}} is deleted successfully",
+    "ACTIVE": "Active",
+    "BLOCKED": "Blocked",
+    "CREATED_AT": "Created",
+    "LAST_MODIFIED": "Last Modified"
+  },
+  "DELETE": {
+    "TITLE": "Delete item",
+    "MESSAGE": "Are you sure you wish to delete this item?",
+    "CONFIRM": "Yes, delete",
+    "CANCEL": "Cancel"
+  },
+  "ERRORS": {
+    "ERROR": "Error",
+    "APPLICATION_ERROR": "Error occurred!",
+    "PAGE_NOT_FOUND": "Page not found!",
+    "PAGE_NOT_FOUND_MESSAGE": "This page does not exist or the resource that you are looking was deleted.",
+    "PAGE_NOT_FOUND_TIP_1": "Check your web address or use site navigation to find existent sites or resources.",
+    "PAGE_NOT_FOUND_TIP_2": "You can always go back to",
+    "PREVIOUS_PAGE": "previous page"
+  },
+  "VALIDATORS": {
+    "RESTRICTED": "{{fieldName}} must only contain {{allowedCharacters}}",
+    "RESTRICTED_LENGTH": "{{fieldName}} must be of length {{length}} and only contain {{allowedCharacters}}",
+    "NUMBER": "{{fieldName}} must be number",
+    "NUMBER_LENGTH": "{{fieldName}} must be number of length {{length}}",
+    "TEXT": "{{fieldName}} must contain text",
+    "STRING": "{{fieldName}} must contain only letters or numbers",
+    "STRING_LENGTH": "{{fieldName}} must be of length {{length}} and only contain letters and numbers",
+    "CRON": "Every line must contain valid Cron expression format",
+    "POSTAL_NUMBER": "Must be valid postal number"
+  }
+}

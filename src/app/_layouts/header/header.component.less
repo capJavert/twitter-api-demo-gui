@@ -1,0 +1,39 @@
+
+.app-is-mobile .app-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+.app-toolbar {
+  height: 60px;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #ffffff;
+    margin: 0 0 5px 0 !important;
+  }
+}
+
+h1.app-name {
+  margin-left: 8px;
+}
+
+.language-picker {
+  margin-left: auto;
+  order: 2;
+}
+.app-is-mobile .app-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.version {
+  font-weight: 100;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 12px;
+}

@@ -1,0 +1,18 @@
+<mat-toolbar color="primary" class="app-toolbar">
+  <button *ngIf="sidenav" mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+  <h1 class="app-name">
+    {{ 'MAIN.TITLE' | translate }}
+    <span class="version">v{{appVersion | async}}</span>
+  </h1>
+
+  <div class="language-picker">
+    <mat-form-field>
+      <mat-select [(value)]="language">
+        <mat-option value="en">
+          English
+          <span class="flag-icon flag-icon-en"></span>
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+</mat-toolbar>

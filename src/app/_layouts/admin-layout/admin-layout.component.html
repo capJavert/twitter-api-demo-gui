@@ -1,0 +1,22 @@
+
+<app-loader></app-loader>
+
+<div class="app-container" [class.app-is-mobile]="mobileQuery.matches">
+  <app-header [sidenav]="sidenav"></app-header>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side">
+      <app-admin-sidebar></app-admin-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="container-fluid">
+        <app-breadcrumbs></app-breadcrumbs>
+
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<app-footer></app-footer>

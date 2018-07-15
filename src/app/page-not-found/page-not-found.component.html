@@ -1,0 +1,30 @@
+
+<app-loader></app-loader>
+
+<div class="app-container app-is-mobile">
+  <app-header [sidenav]="sidenav"></app-header>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side">
+      <app-admin-sidebar></app-admin-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="container-fluid">
+        <app-breadcrumbs></app-breadcrumbs>
+
+        <div class="row main-content ">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <h1>{{'ERRORS.PAGE_NOT_FOUND' | translate}}</h1>
+
+            <h2>{{'ERRORS.PAGE_NOT_FOUND_MESSAGE' | translate}}</h2>
+            <h2>{{'ERRORS.PAGE_NOT_FOUND_TIP_1' | translate}}</h2>
+            <h2>{{'ERRORS.PAGE_NOT_FOUND_TIP_2' | translate}} <span (click)="goBack();" class="go-back">{{'ERRORS.PREVIOUS_PAGE' | translate}}</span></h2>
+          </div>
+        </div>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<app-footer></app-footer>
